@@ -1,0 +1,33 @@
+Visual Control adalah sebuah sistem yang mencatat setiap perubahan
+yang dilakukan pada file.
+
+Visual Control System adalah alat atau software yang digunakan untuk melakukan
+kegiatan dari visual control.
+Jenis-Jenis Visual Control System :
+1. VCS lokal
+    pada vcs local itu menyimpan perubahan yg terjadi pada
+    file kita itu di komputer/laptop kita sendiri.
+    Jadi kalau laptop nya rusak file perubahan tersebut bakal hilang.
+
+2. VCS Terpusat(client-server)
+    pada vcs terpusat ada satu server yang menyimpan perubahan pada file.
+    satuserver ini nanti ke hubung sama beberapa laptop, nanti perubahan 
+    yg dilakukan masing" laptop disimpan lah sama si server nya.
+
+3. VCS Terdistribusi (Peer-to-Peer)
+    pada vcs ini misalnya ada beberapa laptop yang menyimpan 1 file penting,
+    tapi disetiap laptop itu udah punya salinan dari file tersebut jadi walaupun
+    ada laptop yg rusak file nya ga bakal hilang karna file nya udah punya salinan
+    atau bisa di kirim lagi dari laptop lain.
+
+Git adalah salah satu jenis vcs yg digunakan.
+
+kegunaan Git :
+1. untuk melihat riwayat perubahan.
+2. kolaborasi jarak jauh
+3. Branch and merging
+    Branch yaitu membuat atau menambahkan file baru atau perubahan pada file tanpa merusak file main nya 
+    sedangkan mergin menggabungkan perubahan yg baru pada file mainnya.
+
+
+
