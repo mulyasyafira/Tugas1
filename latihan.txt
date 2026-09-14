@@ -29,5 +29,48 @@ kegunaan Git :
     Branch yaitu membuat atau menambahkan file baru atau perubahan pada file tanpa merusak file main nya 
     sedangkan mergin menggabungkan perubahan yg baru pada file mainnya.
 
+Dasar-Dasar Git
 
+Bikin reposisitory: git init (folder baru jadi reposisitory) atau git clone <url> (nyalin reposisitory yang udah ada).
+Status file: untracked -> staged (git add) -> di-commit -> unmodified -> kalau diedit lagi jadi modified.
 
+Perintah penting:
+git status : cek status file
+git add <file> : masukin ke staging area
+git commit -m "pesan" : simpan perubahan
+git commit -am "pesan" : langsung stage + commit file yang udah pernah dilacak
+.gitignore : daftar file/folder yang mau diabaikan Git
+
+Membatalkan:
+git reset : Membatalkan staging
+git reset HEAD~1 : Membatalkan commit terakhir, perubahan tetap ada
+git reset --hard HEAD~1 : Membatalkan commit terakhir sama menghapus perubahannya 
+
+Lihat riwayat: 
+git log
+git log --oneline : buat versi ringkas.
+
+Remote (salinan reposisitory di tempat lain, misal GitHub):
+git remote add <nama> <url> : nambah remote
+git fetch : download perubahan tanpa merge
+git pull : download + merge otomatis
+git push : upload commit ke remote
+
+GitHub adalah tempat menghosting reposisitorysitory git.
+README berisi informasi tentang project ini, kegunaannya, cara mulai pakainya.
+
+Menghubungin reposisitory lokal ke GitHub:
+membuat reposisitory baru di GitHub
+git branch -M main (ubah nama branch kalau perlu)
+git remote add origin <url>
+git push -u origin main (setelah ini cukup git push aja)
+
+Markdown adalah format penulisan simpel yang dipakai buat README, dokumentasi, Slack/Discord, dll. Disimpan dengan ekstensi .md.
+
+Sintaks penulisan:
+Judul: # sampai ###### (makin banyak pagar, makin kecil ukurannya)
+Gaya teks: **tebal**, *miring*, ~~dicoret~~
+List: 1. item (angka) buat ordered, - item (strip) buat unordered
+Link: [teks](url) — Gambar: ![teks](url)
+Tabel: pakai | buat kolom, baris kedua diisi --- buat penanda header
+Kode: dibungkus tiga backtick, bisa tambah nama bahasa (js, html, sql, dst) buat syntax highlighting
